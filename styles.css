@@ -1,0 +1,61 @@
+h1,
+h2 {
+  color: #231d3c;
+  font-family: "Nunito", sans-serif;
+  align-items: center;
+}
+h3 {
+  margin: 0;
+  position: relative;
+}
+h4 {
+  color: gray;
+  font-family: "Nunito", sans-serif;
+}
+button {
+  size: 20px;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+li {
+  color: #1b0c58;
+  font-size: 16px;
+  font-weight: 140;
+  height: 25px;
+  line-height: 1;
+  list-style: none;
+}
+
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.weather-icon {
+  height: 64px;
+  width: 64px;
+  margin-right: 10px;
+}
+
+.temperature {
+  color: rgb(33, 33, 33);
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.units {
+  position: relative;
+  top: -34px;
+}
+
+.search-form {
+  margin-bottom: 0px;
+}
