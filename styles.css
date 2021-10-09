@@ -9,7 +9,7 @@ h3 {
   position: relative;
 }
 h4 {
-  color: #0b5ed7;
+  color: blueviolet;
   font-family: "Nunito", sans-serif;
   font-size: 34px;
   font-weight: 140;
@@ -32,7 +32,7 @@ li {
 }
 
 .weather-app {
-  border: 1px solid #0b5ed7;
+  border: 1px solid blueviolet;
   padding: 15px;
   margin: 20px auto;
   border-radius: 10px;
@@ -52,6 +52,7 @@ li {
   margin-left: 5px;
   height: 64px;
   width: 64px;
+  align-content: right;
 }
 
 .temperature {
@@ -59,6 +60,7 @@ li {
   font-size: 70px;
   font-weight: 500;
   line-height: 1;
+  text-align: right;
 }
 
 .units {
