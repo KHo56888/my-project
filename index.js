@@ -24,7 +24,7 @@ currentDate.innerHTML = `${day} ${hour}:${minute}`;
 function showCity(city) {
   let apiKey = "0db85b25f991c2850cc32c2144143340";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeatherCondition);
+  axios.get(apiUrl).then(displayPositionWeather);
 }
 
 function handleSubmit(event) {
@@ -32,6 +32,7 @@ function handleSubmit(event) {
   let city = document.querySelector("#city-input").value;
   showCity(city);
 }
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
@@ -108,4 +109,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-showCity("London");
+showCity("Paris");
