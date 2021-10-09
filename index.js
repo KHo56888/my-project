@@ -32,11 +32,11 @@ function handleSubmit(event) {
   let city = document.querySelector("#city-input").value;
   showCity(city);
 }
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-function displayWeatherCondition(response) {
+function displayPositionWeather(response) {
+  console.log(response.data);
   let name = response.data.name;
   let nameElement = document.querySelector("#city");
   nameElement.innerHTML = name;
@@ -44,13 +44,6 @@ function displayWeatherCondition(response) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = `${temperature}`;
 
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].description;
-}
-
-function displayPositionWeather(response) {
-  console.log(response.data);
-  let iconElement = document.querySelector("#icon");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
@@ -59,6 +52,8 @@ function displayPositionWeather(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+
+  let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -78,9 +73,14 @@ function getCurrentPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(findPosition);
 }
+function displayCurrentTemp(response) {
+  let temperature = Math.round(response.data.main.temp);
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = `${temperature}`;
+}
 
 let button = document.querySelector("#current-location-button");
-button.addEventListener("click", getCurrentPosition);
+button.addEventListener("click", getCurrentPosition, displayCurrentTemp);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
