@@ -39,8 +39,8 @@ footer {
 }
 
 .weather-app {
-   border: 1px solid #9cd3d3;
-  box-shadow: 10px 10px 10px 10px #9cd3d3;
+  border: 1px solid #9cd3d3;
+  box-shadow: -20px 10px 20px -10px #9cd3d3;
   padding: 15px;
   margin: 50px auto;
   border-radius: 25px;
@@ -92,9 +92,9 @@ footer {
 }
 
 .netlify-link {
-  color: #9cd3d3;
+  color: #00204a;
 }
 
 .git-link {
-  color: #9cd3d3;
+  color: #00204a;
 }
