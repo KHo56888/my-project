@@ -17,7 +17,8 @@
  
     <div class="container">
         <div class="weather-app-wrapper" >
-            <div class="weather-app p-3 mb-1 bg-white text-dark">
+            <div class="weather-app p-3 mb-1 text-dark">
+                <br>
         <form id="search-form" class="mb-3" >
       <div class="row">
           <div class="col-6">
@@ -34,7 +35,7 @@
           <input  id="submit-button"
                   type="submit" 
                   value="Search"
-                  class="form-control btn btn-secondary shadow-sm w-100"
+                  class="form-control btn btn-info shadow-sm w-100"
                    />
                   </div>
         <span class="col-3">
@@ -46,48 +47,45 @@
                   >
                   Current</button>
                   </div>
-    <br>
+                  <br>
+                  <br>
+                  <h4 id="city"></h4>
+                  <h3 id="date"></h3>
+                  
+                  
   </form>
-  <br>
   <div class="overview">
       <div class="row align-items-start">
-             <div class="col-3">
-          <h4 id="city"></h4>
-          <span class="temperature" id="temperature"></span
-            ><span class="units"
-            ><a href="#" id="celsius-link" class="active">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a></span
-          >
-        </div>
           
         <div class="col">
-            <img src="images/partly_cloudy.png" alt="Cloudy" id="icon" class="float-left"  />
-          </div>
-          <div class="col">
             <ul>
-                <li><span id="date"></span></li>
                 <li id="description"></li>
-              </ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
           </div>
-          <div class="col">
-          <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> km/h</li>
-          </ul>
-        </div>
+        <div class="col">
+            <img src="images/partly_cloudy.png" alt="Cloudy" id="icon"/>
+              <span class="temperature" id="temperature"></span
+                ><span class="units"
+                ><a href="#" id="celsius-link" class="active">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a></span
+              >
+            </div> 
       </div>
     </div>
-  
-          <small>
-            <a
-              href="https://github.com/KHo56888/Shecodes.git"
-              target="_blank"
-              >Open-source code</a
-            >
-            by K Holder
-          </small>
         </div>
       </div>
+      <footer>
+      <a
+        href="https://github.com/KHo56888/Shecodes.git"
+        target="_blank"
+        class="git-link"
+        > Open-source code </a
+      >by 
+      <strong
+      class="credit"> K Holder </strong>
+      </footer>
     </div>
       <script src="index.js"></script>
 </body>
