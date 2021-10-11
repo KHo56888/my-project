@@ -9,7 +9,7 @@ h3 {
   position: relative;
 }
 h4 {
-  color: blueviolet;
+  color: rgb(93, 92, 94)
   font-family: "Nunito", sans-serif;
   font-size: 34px;
   font-weight: 140;
@@ -32,7 +32,7 @@ li {
 }
 
 .weather-app {
-  border: 1px solid blueviolet;
+  border: 1px solid rgb(93, 92, 94);
   padding: 15px;
   margin: 20px auto;
   border-radius: 10px;
