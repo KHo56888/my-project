@@ -39,11 +39,11 @@ footer {
 }
 
 .weather-app {
-  border: 1px solid #9cd3d3;
-  box-shadow: 0 20px 40px #ffca2c;
+   border: 1px solid #9cd3d3;
+  box-shadow: 10px 10px 10px 10px #9cd3d3;
   padding: 15px;
-  margin: 20px auto;
-  border-radius: 15px;
+  margin: 50px auto;
+  border-radius: 25px;
   max-width: 600px;
   background: white;
 }
